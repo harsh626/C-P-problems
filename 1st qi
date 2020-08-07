@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+
+    int ar[4],temp1,temp2,i;
+    printf("Enter 4 Numbers: ");
+    for(i=0;i<4;i++){
+        scanf("%d",&ar[i]);
+    }
+    if(ar[0]>ar[1]){
+    temp1=ar[0];
+    }
+    else{
+    temp1=ar[1];
+    }
+    
+    if(ar[2]>ar[3]){
+    temp2=ar[2];
+    }
+    else{
+    temp2=ar[3];
+    }
+    
+    if(temp1>temp2){
+    printf("largest is %d",temp1);
+    }
+    else{
+    printf("largest is %d",temp2);
+    }
+}
