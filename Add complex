@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+struct comp{
+    int real;
+    int imag;
+} Num1, Num2, sum;
+
+int main(){
+    
+    printf("Enter Realno. 1: ");
+    scanf("%d",&Num1.real);
+    printf("Enter Imaginaryno. 1: ");
+    scanf("%d",&Num1.imag);
+    
+    printf("Enter Realno. 2: ");
+    scanf("%d",&Num2.real);
+    printf("Enter Imaginaryno. 2: ");
+    scanf("%d",&Num2.imag);
+    
+    sum.real = Num1.real + Num2.real ;
+    sum.imag = Num1.imag + Num2.imag ;
+    
+    printf("The sum of the given complex no.: %d+%di",sum.real,sum.imag);
+    
+}
