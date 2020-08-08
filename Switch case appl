@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(){
+    
+    int in,money,bankAcc;
+   do{ 
+    printf("Please select one of the given options: Deposit(1), Withdraw(2), Check Balance(3), Exit(0) ");
+    scanf("%d",&in);
+    switch(in){
+        case 1: 
+            printf("Enter Amount To be Deposited: ");
+            scanf("%d",&money);
+            bankAcc += money;
+            printf("Amount Deposited :D \n");
+            break;
+        
+        case 2: 
+            printf("Enter Amount to be Withdrawn: ");
+            scanf("%d",&money);
+            bankAcc -= money;
+            printf("Amount Withdrawn :O\n");
+            break;
+        
+        case 3:
+            printf("Your Account balance is : %d\n",bankAcc);
+            break;
+        
+        case 0: 
+            printf("byebye");
+            break;
+        
+    } 
+       
+   }while(in!=0);
+    
+    
+}
