@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<stdlib.h>
+ struct Data{
+    char name;
+    int rollno;
+    char email;
+} ;
+
+int main(){
+    
+    int n,i;
+    struct Data *ptr;
+    
+    printf("Enter Number of students:");
+    scanf("%d",&n);
+    
+    ptr = (struct Data*)malloc(n*sizeof(struct Data));
+    
+    for (i=0;i<n;i++) {
+        printf("Enter Details of student %d: \n",i+1);
+        printf("Name: ");
+        scanf("%s",ptr+i->name);
+        printf("Roll no: ");
+        scanf("%d",ptr+i->rollno);
+        printf("Email-Id: ");
+        scanf("%s",ptr+i->email); 
+    }
+
+    for(i=0;i<n;i++){
+        printf("Details of student %d : \n",i+1);
+        printf("Name: %s",*ptr+i->name);
+        printf("Roll no: %d",*ptr+i->rollno);
+        printf("Email-Id: %s",*ptr+i->email);    
+    }
+ }
