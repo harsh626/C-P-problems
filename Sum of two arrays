@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+    int i,ar1[100],ar2[100],n;
+    
+    printf("Enter Number of elements: ");
+    scanf("%d",&n);
+    printf("Enter elements in array 1: ");
+    for(i=0;i<n;i++){
+        scanf("%d",&ar1[i]);
+    }
+    printf("Enter elements in array 2: ");
+    for(i=0;i<n;i++){
+        scanf("%d",&ar2[i]);
+    }
+    for(i=0;i<n;i++){
+        ar2[i] = ar2[i] + ar1[i];
+    }
+    printf("The sum of arrays is: ");
+    for(i=0;i<n;i++){
+        printf("%d ",ar2[i]);
+    }
